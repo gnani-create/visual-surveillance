@@ -1,0 +1,48 @@
+Step 0:Install Prerequisites
+1)Install Python
+2)Install Required Libraries(requirements1.txt)
+
+
+Step 1: Setup Database
+
+1)Ensure MySQL is installed and running.
+2)Create a database named face_recognizer.
+3)Create necessary tables (criminal and recognitions) using your database schema.
+4)Update the connection credentials in the code (host, username, password) where necessary.
+
+
+Step 2: Image and Data Directory
+
+1)Place the images and data in the correct directories:
+2)Update image paths in main.py and face_recognition.py.
+3)Ensure images are accessible at the mentioned paths.
+4)Confirm the data directory in train.py:
+
+
+Step 3: Train the Model
+
+1)Run train.py:
+2)Ensure a classifier.xml is created, which is essential for face recognition.
+
+Step 4: Launch the Application
+
+1)Start the main application using:python main.py,The interface will display options like:
+Criminal Details: Manage criminal records.
+Face Detector: Start real-time face recognition.
+Train Data: Re-train the model using new images.
+Last Visited: View recently identified criminals.
+
+✅ Step 5: Troubleshooting Tips
+1)If the camera is not detected, ensure it is properly connected and not in use by other applications.
+2)If you face database errors, validate your MySQL connection and database schema.
+3)Verify haarcascade_frontalface_default.xml exists in the working directory for face detection.
+
+
+
+
+
+
+
+
+
+
