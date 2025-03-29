@@ -1,0 +1,7 @@
+OpenCV
+NumPy
+Pillow
+MySQL-Connector
+Pandas
+Tkinter
+Haar Cascade

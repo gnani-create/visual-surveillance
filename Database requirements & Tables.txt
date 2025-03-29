@@ -1,0 +1,38 @@
+Database Name: face_recognizer
+(You can create it using: CREATE DATABASE face_recognizer;)
+
+Table Name: criminal
+(Stores criminal records for face recognition)                                                                                                                            
+Column Name	Data Type	Description
+criminal_id	VARCHAR(20)	Unique ID for each criminal (Primary Key)
+dep	VARCHAR(50)	Department/Commissionerate (e.g., "Cyberabad", "Rachakonda")
+station	VARCHAR(50)	Police Station (e.g., "Uppal", "LB Nagar")
+name	VARCHAR(100)	Criminal's Full Name
+age	VARCHAR(10)	Criminal's Age
+gender	VARCHAR(10)	Gender (Male/Female/Other)
+dob	VARCHAR(20)	Date of Birth (DD/MM/YYYY)
+photo_sample	VARCHAR(5)	Whether photo was taken (Yes/No)
+SQL Command to Create Table:
+sql
+Copy
+CREATE TABLE criminal (
+    criminal_id VARCHAR(20) PRIMARY KEY,
+    dep VARCHAR(50),
+    station VARCHAR(50),
+    name VARCHAR(100),
+    age VARCHAR(10),
+    gender VARCHAR(10),
+    dob VARCHAR(20),
+    photo_sample VARCHAR(5)
+);
+2. Additional Tables (Optional but Recommended)
+Table Name: identified_criminals
+(Stores logs of identified criminals with timestamps)
+
+Column Name	           Data Type	                 Description
+id	                   INT (Auto-Increment)	         Unique log ID
+criminal_id	           VARCHAR(20)	                 Matched Criminal ID
+name	                   VARCHAR(100)	                 Criminal's Name
+station	                   VARCHAR(50)	                 Police Station
+age	                   VARCHAR(10)	                 Criminal's Age
+date	                   VARCHAR(20)	                 Date of detection (DD/MM/YYYY)
